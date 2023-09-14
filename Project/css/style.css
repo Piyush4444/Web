@@ -1,0 +1,187 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Montserrat', sans-serif;
+    color: #fff;
+}
+
+html,
+body {
+    height: 100%;
+    width: 100%;
+    cursor: none;
+}
+
+/* cursor style  */
+#cursor {
+    height: 20px;
+    width: 20px;
+    background-color: #96c11e;
+    border-radius: 50%;
+    position: fixed;
+    transition: 0.7 ease-in;
+    z-index: 99;
+
+}
+
+#cursor-blur {
+    height: 400px;
+    width: 400px;
+    background-color: #96c11e3c;
+    border-radius: 50%;
+    position: fixed;
+    transition: 0.7 ease-in;
+    filter: blur(60px);
+    z-index: 9;
+
+}
+
+/* navigation bar styles */
+#nav {
+    height: 145px;
+    width: 100%;
+    /* background-color: red; */
+    display: flex;
+    align-items: center;
+    padding: 0 150px;
+    gap: 50px;
+    justify-content: flex-start;
+    position: fixed;
+    z-index: 99;
+}
+
+#nav img {
+    height: 75px;
+}
+
+#nav h4 {
+    text-transform: uppercase;
+    font-weight: 500;
+}
+
+/* nav end  */
+
+
+/* video style */
+video {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    position: fixed;
+    z-index: -1;
+
+}
+
+/* video end  */
+
+/* main div styles */
+#main {
+    position: relative;
+    background-color: rgba(0, 0, 0, 0.45);
+}
+
+
+/* page1 style  */
+#page1 {
+    height: 100vh;
+    width: 100%;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+    z-index: 10;
+}
+
+#page1 h1 {
+    font-size: 140px;
+    font-weight: 900;
+    position: relative;
+}
+
+#page1 h1::before {
+    content: "EAT. DRINK. PLAY.";
+    position: absolute;
+    color: #000;
+    top: -6px;
+    left: -6px;
+    -webkit-text-stroke: 2px #95c11e;
+    z-index: -1;
+}
+
+#page1 h2 {
+    font-size: 30px;
+    font-weight: 800;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+#page1 p {
+    font-size: 17px;
+    font-weight: 400;
+    width: 40%;
+}
+
+/* end of page1 */
+
+
+/* page2 style  */
+
+#page2 {
+    height: 100vh;
+    width: 100%;
+    z-index: 10;
+}
+
+#scroller {
+    white-space: nowrap;
+    overflow-x: auto;
+    overflow-y: hidden;
+    position: relative;
+    z-index: 10;
+}
+
+#scroller::-webkit-scrollbar {
+    display: none;
+}
+
+#scroller-in {
+    display: inline-block;
+    white-space: nowrap;
+    animation: scroll;
+    animation-duration: 40s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+
+}
+
+
+#scroller h4 {
+    display: inline-block;
+    font-size: 130px;
+    font-weight: 900;
+    font-family: 'Gilroy-Medium', sans-serif;
+    margin-right: 30px;
+    transition: all linear 0.3s;
+    color: #000;
+    -webkit-text-stroke: 2px #ffffff;
+    text-transform: uppercase;
+
+}
+
+#scroller h4:hover {
+    color: #95c11e;
+    -webkit-text-stroke: #96c11e00;
+}
+
+@keyframes scroll {
+    from {
+        transform: translateX(0);
+    }
+
+    to {
+        transform: translateX(-100%);
+    }
+}
