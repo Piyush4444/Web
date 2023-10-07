@@ -1,0 +1,564 @@
+@import url('https://fonts.googleapis.com/css2?family=Krub:wght@300;400;600;700&family=Oswald:wght@300&display=swap');
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Krub', sans-serif;
+    color: #fff;
+}
+
+html,
+body {
+    height: 100%;
+    width: 100%;
+    position: relative;
+    /* cursor: none; */
+}
+
+main {
+    position: relative;
+    background-color: #111111;
+    z-index: 10;
+}
+
+/* navbar style  */
+
+.nav-container {
+    position: fixed;
+    background-color: #111111;
+    height: 100px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 99;
+}
+
+.nav-container img {
+    height: 8vw;
+    margin-right: 3vw;
+}
+
+
+.nav-content {
+    display: flex;
+    gap: 4vw;
+}
+
+.nav-container a {
+    text-decoration: none;
+}
+
+/* Underline styles */
+.nav-container a {
+    display: block;
+    position: relative;
+    padding: 0.4em 0;
+}
+
+/* Fade in */
+.nav-container a::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 0.1em;
+    background-color: #fff;
+    opacity: 0;
+    transition: opacity 350ms, transform 350ms;
+}
+
+.nav-container a:hover::after,
+.nav-container a:focus::after {
+    opacity: 1;
+    transform: translate3d(0, 0.2em, 0);
+}
+
+.nav-container h3 {
+    text-transform: uppercase;
+    letter-spacing: 0.1vw;
+    font-size: 1.5vw;
+    font-weight: 400;
+    font-family: 'Oswald', sans-serif;
+}
+
+/* end nav  */
+
+/* Page number 1 style  */
+.Page-1 {
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    position: relative;
+}
+
+.Page-1-Designer-container {
+    height: 100%;
+    width: 8%;
+    /* background-color: crimson; */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.Page-1-Designer-container h3 {
+    text-transform: uppercase;
+    letter-spacing: 1.8vw;
+    transform: rotateZ(-90deg);
+    font-size: 2.5vw;
+    font-weight: 400;
+    margin-left: -5.5vw;
+    opacity: 0.3;
+}
+
+.Page-1-Name-container {
+    height: 100%;
+    width: 22%;
+}
+
+.Page-1-Name {
+    height: 40%;
+    width: 100%;
+    display: flex;
+    align-items: last baseline;
+    justify-content: end;
+}
+
+.Page-1-Name h1 {
+    text-transform: uppercase;
+    font-size: 5vw;
+    font-weight: 700;
+}
+
+.Page-1-Name span {
+    color: #9C9AFF;
+}
+
+/* shadow text style  */
+.text {
+    text-transform: uppercase;
+    font-family: verdana;
+    font-size: 12em;
+    font-weight: 700;
+    color: #f5f5f5;
+    text-shadow: 1px 1px 1px #9C9AFF,
+        1px 1px 2px #9C9AFF,
+        1px 1px 3px #9C9AFF,
+        1px 1px 4px #9C9AFF,
+        1px 1px 5px #9C9AFF,
+        1px 1px 6px #9C9AFF,
+        1px 1px 7px #9C9AFF,
+        1px 1px 8px #9C9AFF,
+        1px 1px 9px #9C9AFF,
+        1px 1px 10px #9C9AFF,
+        1px 6px 18px rgba(16, 16, 16, 0.4),
+        1px 10px 22px rgba(16, 16, 16, 0.2),
+        1px 35px 25px rgba(16, 16, 16, 0.2),
+        1px 60px 30px rgba(16, 16, 16, 0.4);
+}
+
+
+/* .Page-1-Name h1::before {
+    content: "ROHAN.";
+    position: absolute;
+    color: #000000;
+    top: 25.3%;
+    left: 11.3%;
+    -webkit-text-stroke: 2px #9C9AFF;
+    z-index: -1;
+} */
+
+
+.Page-1-Apro i {
+    font-size: 0.75vw;
+    color: #9C9AFF;
+    letter-spacing: 5px;
+}
+
+.Page-1-Apro-h2 {
+    margin-bottom: 3.2px;
+    margin-left: 1.5vw;
+}
+
+.Page-1-Apro {
+    height: 60%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+}
+
+.Page-1-Apro h2 {
+    text-transform: uppercase;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1vw;
+    font-weight: 600;
+}
+
+.Page-1-Apro span {
+    color: #9C9AFF;
+    font-weight: 600;
+}
+
+.Page-1-Dp {
+    height: 100%;
+    width: 36%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-top: 10%;
+    z-index: 10;
+}
+
+.Page-1-Dp-div {
+    height: 31vw;
+    width: 31vw;
+    background-color: #9C9AFF;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    /* box-shadow: 1px 1px 1px #9C9AFF,
+        1px 1px 2px #9C9AFF,
+        1px 1px 3px #9C9AFF,
+        1px 1px 4px #9C9AFF,
+        1px 1px 5px #9C9AFF,
+        1px 1px 6px #9C9AFF,
+        1px 1px 7px #9C9AFF,
+        1px 1px 8px #9C9AFF,
+        1px 1px 9px #9C9AFF,
+        1px 1px 10px #9C9AFF,
+        1px 6px 18px rgba(16, 16, 16, 0.4),
+        1px 10px 22px rgba(16, 16, 16, 0.2),
+        1px 35px 25px rgba(16, 16, 16, 0.2),
+        1px 60px 30px rgba(16, 16, 16, 0.4); */
+}
+
+.Page-1-Dp-div img {
+    height: 30vw;
+    width: 30vw;
+    border-radius: 50%;
+}
+
+.Page-1-Since-container {
+    height: 100%;
+    width: 34%;
+}
+
+.Page-1-Since {
+    height: 40%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: end;
+}
+
+.Page-1-Since-div {
+    margin-top: 3vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 6.5vw;
+    width: 11vw;
+    border-top: 3.5px solid #fff;
+    border-left: 3.5px solid #fff;
+    border-bottom: 3.5px solid #fff;
+}
+
+.Page-1-Since-div h2 {
+    text-transform: uppercase;
+    letter-spacing: 0.2vw;
+    font-size: 1.7vw;
+    font-weight: 400;
+}
+
+.Page-1-Since-div h1 {
+    text-transform: uppercase;
+    letter-spacing: 0.2vw;
+    font-size: 3vw;
+    font-weight: 400;
+}
+
+.Page-1-Para {
+    height: 60%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.Page-1-Para h1 {
+    text-transform: uppercase;
+    word-spacing: 0.2vw;
+    line-height: 1.6;
+    font-size: 2vw;
+}
+
+.Page-1-Para p {
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 400;
+    font-size: 1.2vw;
+    line-height: 1.6;
+    margin-top: 0.8vw;
+}
+
+.hide-in-desktop {
+    display: none;
+}
+
+/* Tabet view  */
+@media (max-width: 768px) {
+
+    /* nav style  */
+    .nav-container {
+        height: 80px;
+
+    }
+
+    .nav-container img {
+        height: 15vw;
+        margin-right: 3vw;
+    }
+
+    .nav-container h3 {
+        text-transform: uppercase;
+        letter-spacing: 0.1vw;
+        font-size: 2vw;
+    }
+
+    /* end nav  */
+
+
+    /* Page number 1 style  */
+
+    .Page-1-Designer-container {
+        align-items: center;
+    }
+
+    .Page-1-Designer-container h3 {
+
+        font-size: 4.5vw;
+        margin-left: -3.6vw;
+        letter-spacing: 7vh;
+    }
+
+    .Page-1-Name h1 {
+        font-size: 4.5vw;
+    }
+
+    .Page-1-Dp-div {
+        height: 36vw;
+        width: 36vw;
+    }
+
+    .Page-1-Dp-div img {
+        height: 34vw;
+        width: 34vw;
+
+    }
+
+
+    .Page-1-Apro i {
+        font-size: 1vw;
+        color: #9C9AFF;
+        letter-spacing: 5px;
+    }
+
+    .Page-1-Apro {
+        align-items: end;
+        padding-bottom: 14vw;
+    }
+
+    .Page-1-Apro h2 {
+        font-size: 2vw;
+    }
+
+    .Page-1-Since-div {
+        height: 9vw;
+        width: 15vw;
+        border-top: 0.3vw solid #fff;
+        border-left: 0.3vw solid #fff;
+        border-bottom: 0.3vw solid #fff;
+    }
+
+    .Page-1-Para h1 {
+        text-transform: uppercase;
+        word-spacing: 0.2vw;
+        line-height: 1.6;
+        font-size: 2.4vw;
+    }
+
+    .Page-1-Para p {
+        font-family: Arial, Helvetica, sans-serif;
+        font-weight: 400;
+        font-size: 1.7vw;
+        line-height: 1.6;
+        margin-top: 0.8vw;
+    }
+}
+
+
+/* Smartphone View  */
+@media (max-width: 412px) {
+    .hide-in-desktop {
+        display: block;
+    }
+
+    .hide-in-smartphone {
+        display: none;
+    }
+
+    /* nav style  */
+    .nav-container {
+        height: 19vw;
+        justify-content: space-between;
+    }
+
+    .nav-container img {
+        height: 25vw;
+        margin-right: 3vw;
+    }
+
+    .nav-content {
+        display: none;
+    }
+
+    /* end nav  */
+
+    /* Page number 1 style  */
+    .Page-1 {
+        height: 80vh;
+    }
+
+    .Page-1-Designer-container h3 {
+        margin-left: 0;
+        font-size: 6vw;
+    }
+
+    .Page-1-Name-container {
+        /* background-color: antiquewhite; */
+        display: none
+    }
+
+    .Page-1-Dp {
+        padding: 0;
+        width: 92%;
+        flex-direction: column;
+        /* background-color: antiquewhite; */
+    }
+
+
+
+
+    .Page-1-Since-container {
+        display: none;
+    }
+
+
+    .for-smartphone-name {
+        display: flex;
+        height: 40%;
+        width: 100%;
+        /* background-color: red; */
+    }
+
+    .Page-1-Name {
+        height: 100%;
+        width: 65%;
+        /* background-color: brown; */
+        display: flex;
+        align-items: end;
+        justify-content: center;
+        margin: 0;
+        padding: 0;
+        padding-bottom: 8vw;
+    }
+
+    .Page-1-Name h1 {
+        font-size: 10vw;
+    }
+
+    .Page-1-Since {
+        height: 100%;
+        width: 35%;
+        display: flex;
+        align-items: center;
+        justify-content: end;
+    }
+
+    .Page-1-Since-div {
+        height: 18vw;
+        width: 28vw;
+    }
+
+    .Page-1-Since-div h2 {
+        letter-spacing: 0.2vw;
+        font-size: 4.6vw;
+    }
+
+    .Page-1-Since-div h1 {
+        letter-spacing: 0.4vw;
+        font-size: 7.6vw;
+    }
+
+
+
+    .for-smartphone-dp {
+        height: 55%;
+        width: 100%;
+        /* background-color: antiquewhite; */
+        display: flex;
+        flex-direction: column;
+        align-items: start;
+        justify-content: center;
+        padding-left: 3vw;
+    }
+
+    .Page-1-smartphone-dp {
+        height: 84vw;
+        width: 84vw;
+        background-color: #9C9AFF;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border-radius: 50%;
+    }
+
+    .Page-1-smartphone-dp img {
+        height: 80vw;
+        width: 80vw;
+        border-radius: 50%;
+
+    }
+
+    .Page-1-Apro {
+        /* background-color: red; */
+        height: 5%;
+        width: 100%;
+        margin: 0;
+        padding: 0;
+        display: flex;
+        align-items: center;
+        justify-content: start;
+        flex-direction: row;
+        padding-left: 32vw;
+    }
+
+    .Page-1-Apro h2 {
+        font-size: 3vw;
+
+    }
+
+    .Page-1-Apro-h2 {
+        margin-bottom: 1px;
+        margin-left: 2.5vw;
+    }
+
+    .Page-1-Apro i {
+        font-size: 2.7vw;
+    }
+}
