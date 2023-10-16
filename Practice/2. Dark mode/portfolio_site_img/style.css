@@ -22,13 +22,11 @@
     /* background-color: white; */
     margin: 0;
     padding: 0;
-    color: var(--secondry);
+
     font-family: 'Krub', sans-serif;
 }
 
-.warapper {
-    background-color: var(--primary);
-}
+
 
 .nav {
     position: relative;

@@ -3,11 +3,31 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/remixicon@3.5.0/fonts/remixicon.css"
+      rel="stylesheet"
+    />
     <link rel="stylesheet" href="style.css" />
     <title>Hover Effect</title>
   </head>
-  <body>
+  <body class="lighttheme">
+    <!-- nav  -->
+    <nav class="nav">
+      <div class="logo">
+        <img src="Logo.png" alt="logo" />
+        <h1>
+          <span id="web">Web </span><span id="my">My</span
+          ><span id="st">st</span><span id="er">er</span
+          ><span id="io">io.</span>
+        </h1>
+      </div>
+      <div class="nav-containt">
+        <i class="ri-moon-fill" id="mode"></i>
+      </div>
+    </nav>
+
     <div class="container">
+      <!-- 1 -->
       <div class="cards" data-tilt data-tilt-max="20" data-tilt-speed="400">
         <div class="background-img" id="background-img-1"></div>
         <div class="card-text">
@@ -49,7 +69,7 @@
 
         <div class="card-stats" id="card-stats-2">
           <div class="stats">
-            <h2>4 <sup>m</sup></h2>
+            <h2>3 <sup>m</sup></h2>
             <h3>Read</h3>
           </div>
           <div class="stats border">
@@ -77,7 +97,7 @@
 
         <div class="card-stats" id="card-stats-3">
           <div class="stats">
-            <h2>4 <sup>m</sup></h2>
+            <h2>6 <sup>m</sup></h2>
             <h3>Read</h3>
           </div>
           <div class="stats border">
@@ -93,5 +113,6 @@
     </div>
 
     <script type="text/javascript" src="vanilla-tilt.min.js"></script>
+    <script type="text/javascript" src="script.js"></script>
   </body>
 </html>
