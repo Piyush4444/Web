@@ -34,9 +34,12 @@
     align-items: center;
 }
 
+.nocursor {
+    cursor: none;
+}
+
 .logo h1 {
     margin-top: 1.7vw;
-    cursor: pointer;
 }
 
 #web:hover {
@@ -76,7 +79,7 @@
 
 .nav img:hover {
     transform: scale(1.2);
-    cursor: pointer;
+
 }
 
 .nav-containt {
@@ -87,7 +90,6 @@
 
 .nav-containt i {
     font-size: 1.5vw;
-    cursor: pointer;
 }
 
 * {
@@ -103,6 +105,18 @@ body {
 
 }
 
+/* cursor style  */
+#cursor {
+    height: 20px;
+    width: 20px;
+    background-color: #d1d1d1;
+    border-radius: 50%;
+    position: fixed;
+    transition: 0.1s ease-out;
+    z-index: 99;
+    pointer-events: none;
+}
+
 .container {
     height: 100%;
     width: 100%;
@@ -114,8 +128,8 @@ body {
 
 .cards {
     display: grid;
-    grid-template-columns: 300px;
-    grid-template-rows: 210px 210px 80px;
+    grid-template-columns: 280px;
+    grid-template-rows: 200px 200px 75px;
     grid-template-areas: "image" "text" "stats";
     border-radius: 18px;
     background-color: #fff;
@@ -124,7 +138,7 @@ body {
 
 
     transform-style: preserve-3d;
-    transform: perspective(1500px);
+    transform: perspective(1600px);
 }
 
 .background-img {
